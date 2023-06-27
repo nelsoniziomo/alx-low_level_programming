@@ -4,7 +4,6 @@
 /**
  * puts_half - prints a string
  * @str: string to print
- *
  * Return: nothing
  */
 
@@ -17,12 +16,12 @@ void puts_half(char *str)
 	putchar(10);
 }
 
+
 /**
-* _strlen - returns the length of a string
-* @s: string
-*
-* Return: the length of the given string
-*/
+ * _strlen - returns the length of a string
+ * @s: string
+ * Return: the length of the given string
+ */
 
 int _strlen(char *s)
 {
@@ -32,4 +31,5 @@ int _strlen(char *s)
 		len++;
 
 	return (len);
+
 }
