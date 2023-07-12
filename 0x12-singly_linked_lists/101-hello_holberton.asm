@@ -1,23 +1,18 @@
-global 	main
+global main
 
-	extern 	printf
-
-
-
-	section .text
+section .text
 
 main:
+  mov rax, 1
+  mov rdi, 1
+  mov rsi, msg
+  mov rdx, msglen
+  syscall
 
-	mov	rdi, format
+  mov rax, 60
+  mov rdi, 0
+  syscall
 
-	mov	rax, 0
-
-	call	printf
-
-	mov	rax, 0
-
-	ret
-
-format:
-
-	db "Hello, Holberton", 10, 0
+section .rodata
+  msg: db "Hello, Holberton", 10
+  msglen: equ $ - msg

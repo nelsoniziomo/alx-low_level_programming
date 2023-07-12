@@ -3,6 +3,7 @@
 /**
  * is_palindrome - returns the 1 if s is a palindrome
  * @s: string to be checked
+ *
  * Return: 1 if s is a palindrome, 0 otherwise
  */
 int is_palindrome(char *s)
@@ -19,9 +20,9 @@ int is_palindrome(char *s)
  * @start: start index
  * @end: end index
  * @flag: flag to indicate if a string is a palindrome
+ *
  * Return: void
  */
-
 void check(char *s, int start, int end, int *flag)
 {
 	if (start <= end)
@@ -37,9 +38,9 @@ void check(char *s, int start, int end, int *flag)
 /**
  * _strlen_recursion - calculates the length of a string
  * @s: string to be used
+ *
  * Return: length of the string
  */
-
 int _strlen_recursion(char *s)
 {
 	int sum = 0;
